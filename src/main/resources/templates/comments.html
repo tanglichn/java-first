@@ -6,6 +6,15 @@
 </head>
 <body>
 
+<h1>评论</h1>
+<form action = "/comment/post" method="post">
+    <input type="hidden" name="nickName" value="bmatch">
+    <input type="hidden" name="songId" value="35847388" />
+    <input name="content" type="text" style="width:80%;height:100px;" placeholder="填写你的评论" ／>
+    <br/>
+    <button type="submit">评论</button>
+</form>
+
 <h3>精彩评论</h3>
 <ul th:each="comment:${comments}">
     <li>
@@ -17,7 +26,7 @@
 
     <li>
         <label>评论时间：</label>
-        <span th:text="${comment.commentTime}"></span>
+        <span th:text="${#dates.format(comment.commentTime, 'yyyy-MM-dd HH:mm:ss')}"></span>
         <label>点赞数：</label>
         <span th:text="${comment.likeNum}"></span>
     </li>

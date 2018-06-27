@@ -7,6 +7,8 @@ package com.qingguatang.java5minute.course3.model;
 
 public class SongInfo {
 
+    private String id;
+
     //歌曲名称
     private String name;
     //歌手名称
@@ -66,5 +68,13 @@ public class SongInfo {
 
     public void setAlbumImg(String albumImg) {
         this.albumImg = albumImg;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }

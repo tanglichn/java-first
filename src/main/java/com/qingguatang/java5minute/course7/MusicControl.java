@@ -26,5 +26,8 @@ public class MusicControl {
     public void init(){
         musics.put("35847388",
                 "http://m10.music.126.net/20180625232725/aee9a64105373eed3a2a5f7f01e3d6d9/ymusic/de9a/6885/e183/effb8f74546c98fd619d51f22e2bfaaf.mp3" );
+
+        musics.put("16435039",
+                "http://m10.music.126.net/20180627004055/fea7ad8a98eebe3650c3fdd476f2ff4c/ymusic/0cce/0768/52ed/db86bd40d6ba02bc4dc09cc942216662.mp3");
     }
 }
